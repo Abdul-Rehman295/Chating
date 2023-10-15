@@ -1,0 +1,281 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: .5s;
+
+
+
+    #container {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+        cursor: auto;
+
+
+        .mobile {
+            width: 20%;
+            height: 80vh;
+            border-radius: 30px;
+            position: relative;
+            border: 1px solid black;
+            box-sizing: border-box;
+
+            >.header {
+                width: 100%;
+                height: 2vh;
+                /* border: 1px solid red; */
+                position: relative;
+                top: 0px;
+                border-top-right-radius: 25px;
+                border-top-left-radius: 25px;
+
+                >.top {
+                    width: 100%;
+                    height: 2rem;
+                    background-color: rgba(0, 0, 0, 0.9);
+                    border-top-right-radius: 25px;
+                    border-top-left-radius: 25px;
+                    padding: 0px 1.5rem;
+
+                    >span {
+                        color: white;
+                        float: left;
+                        line-height: 2rem;
+                        font-size: large;
+                    }
+
+                    >.time {
+                        color: white;
+                        float: right;
+                        line-height: 2rem;
+                        font-size: small;
+                    }
+                }
+            }
+
+            >.screen {
+                width: 100%;
+                height: 69vh;
+                position: relative;
+                /* border: 1px solid black; */
+                border-bottom: 0px;
+                border-top: 0px;
+
+                /* display: none; */
+                >.app {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(to bottom, white, rgb(119, 173, 11));
+                    color: white;
+                    display: none;
+                    flex-direction: column;
+
+                    >.apph {
+                        width: 100%;
+                        height: 7vh;
+                        background: rgb(84, 131, 8);
+                        border-bottom: 1px solid black;
+                        padding: 0px 1rem;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        >span:nth-child(odd) {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 1rem;
+                            font-size: small;
+                        }
+
+                        >span:nth-child(even) {
+                            font-size: x-large;
+
+                            >.bx {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    >.apps {
+                        width: 100%;
+                        height: 53vh;
+                        background-color: rgb(163, 228, 33);
+                        padding: 1rem;
+                        scroll-behavior: smooth;
+                        overflow: scroll;
+                        /* overflow-x: hidden; */
+                        color: black;
+                        display: flex;
+                        flex-direction: column;
+
+                        >ul>li {
+                            padding: .5rem;
+                            background-color: white;
+                            border-radius: 3px;
+                            list-style: none;
+                            margin-top: 3px;
+                            float: left;
+
+                            >sub {
+                                color: silver;
+                                font-size: x-small;
+                            }
+                        }
+
+                        >ol>li {
+                            padding: .5rem;
+                            background: rgb(84, 131, 8);
+                            border-radius: 3px;
+                            list-style: none;
+                            margin-top: 3px;
+                            float: right;
+                            color: white;
+
+                            >sub {
+                                color: silver;
+                                font-size: x-small;
+                            }
+                        }
+                    }
+
+                    >.apps::-webkit-scrollbar {
+                        width: .3em;
+                        height: .3em;
+                    }
+
+                    >.apps::-webkit-scrollbar-track {
+                        box-shadow: inset 0 0 6px rgb(119, 173, 11);
+                    }
+
+                    >.apps::-webkit-scrollbar-thumb {
+                        background-color: rgb(119, 173, 11);
+                        outline: 1px solid white;
+                    }
+
+                    >.appi {
+                        width: 100%;
+                        height: 7vh;
+                        background: rgb(84, 131, 8);
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: .8rem;
+                        border-top: 1px solid black;
+                        padding-bottom: 5px;
+
+                        >input[type="text"] {
+                            width: 15.3rem;
+                            height: 2.5rem;
+                            outline: none;
+                            padding: .7rem;
+                            border: 1px solid rgb(119, 173, 11);
+                            border-radius: 3rem;
+                        }
+
+                        >button {
+                            cursor: pointer;
+                            background-color: transparent;
+                            font-size: xx-large;
+                            transform: rotateX('10deg');
+                            border: 0px;
+                            color: white;
+                        }
+                    }
+                }
+
+                >#home1,
+                #home2 {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url("./Wallpaper.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1rem;
+                    color: white;
+
+                    >span {
+                        position: absolute;
+                        top: 2rem;
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: .5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: yellowgreen;
+                        color: white;
+                        font-size: 2rem;
+                        left: 1.5rem;
+                        cursor: pointer;
+
+                        >span {
+                            position: absolute;
+                            top: -5px;
+                            font-size: x-small;
+                            right: -5px;
+                            width: 1rem;
+                            height: 1rem;
+                            border-radius: 50%;
+                            background-color: red;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                    }
+
+                    >span:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            >.footer {
+                width: 100%;
+                height: 9vh;
+                /* border: 1px solid red; */
+                position: absolute;
+                bottom: 0px;
+                border-bottom-right-radius: 25px;
+                border-bottom-left-radius: 25px;
+                background-color: rgba(0, 0, 0, 1);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                >.homeBtn {
+                    cursor: pointer;
+                    width: 3.3rem;
+                    height: 3.3rem;
+                    background-color: rgba(65, 63, 63, 0.5);
+                    border-radius: 50%;
+                }
+                >.homeBtn:hover{
+                    background-color: rgba(65, 63, 63, 0.3);
+                }
+            }
+
+        }
+    }
+}

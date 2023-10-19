@@ -16,9 +16,9 @@ setInterval(() => {
     wa1.appendChild(b);
     const wifi1 = document.querySelector("#wifi1");
     const wifi2 = document.querySelector("#wifi2");
-    if (window.navigator.onLine != "online") {
-        wifi1.innerHTML = "<i class='bx bx-wifi'><sup><small>*</small></sup></i>";
-        wifi2.innerHTML = "<i class='bx bx-wifi-2'><sup><small>*</small></sup></i>";
+    if (window.navigator.onLine != true) {
+        wifi1.innerHTML = "<i class='bx bx-wifi-off'></i>";
+        wifi2.innerHTML = "<i class='bx bx-wifi-off'></i>";
     } else {
         wifi1.innerHTML = "<i class='bx bx-wifi'></i>";
         wifi2.innerHTML = "<i class='bx bx-wifi-2'></i>";

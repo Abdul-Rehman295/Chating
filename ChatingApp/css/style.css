@@ -212,7 +212,7 @@ body {
                     background-size: cover;
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: center; 
                     padding: 1rem;
                     color: white;
 

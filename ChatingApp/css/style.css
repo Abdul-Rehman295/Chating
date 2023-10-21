@@ -118,7 +118,7 @@ body {
                         background-color: rgb(163, 228, 33);
                         padding: 1rem;
                         scroll-behavior: smooth;
-                        overflow: scroll;
+                        overflow:auto;
                         /* overflow-x: hidden; */
                         color: black;
                         display: flex;
